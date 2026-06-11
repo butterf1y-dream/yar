@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wi‑Fi Sensing 발표</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+    font-family:Arial,sans-serif;
+    background:#0f1115;
+    overflow:hidden;
+}
+.slide{
+    display:none;
+    width:100vw;
+    height:88vh;
+    padding:4vh 5vw;
+    color:#d8d8d8;
+    background:
+    linear-gradient(rgba(15,17,21,.96),rgba(15,17,21,.96)),
+    radial-gradient(circle at top right,rgba(201,154,59,.12),transparent 35%);
+}
+.slide.active{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.card{
+    background:#181b22;
+    border:2px solid #8c6a2d;
+    border-radius:18px;
+    padding:18px;
+    margin:12px 0;
+}
+h1{
+    font-size:44px;
+    color:#e2c27a;
+    margin-bottom:20px;
+}
+h2{
+    color:#e2c27a;
+    border-left:6px solid #8c6a2d;
+    padding-left:15px;
+    margin-bottom:25px;
+}
+p,li{
+    font-size:22px;
+    line-height:1.8;
+}
+ul{padding-left:35px}
+.tag{
+    display:inline-block;
+    padding:6px 14px;
+    border-radius:20px;
+    background:#6e5528;
+    color:#ffe6a6;
+    margin-bottom:15px;
+}
+.nav{
+    height:12vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    background:#0b0d10;
+}
+button{
+    background:#7d5a21;
+    color:white;
+    border:none;
+    padding:12px 24px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:18px;
+}
+.indicator{color:#ddd}
+pre{font-size:24px;color:#ffe6a6}
+.split{display:flex;gap:30px;align-items:center}
+.left,.right{flex:1}
+.right{text-align:center}
+.right img,.img-box img{
+    max-width:100%;
+    max-height:340px;
+    border-radius:15px;
+    border:2px solid #8c6a2d;
+}
+.img-box{text-align:center;margin-top:20px}
+</style>
+</head>
+<body>
+
+<div class="slide active">
+<span class="tag">물리학Ⅱ 진로 프로젝트</span>
+<h1>Wi‑Fi Sensing 기술을 이용한<br>벽 너머 사람 인식</h1>
+<p>전자기파와 인공지능이 만드는 미래 기술</p>
+<p style="margin-top:30px;">학번 : ________<br>이름 : ________</p>
+</div>
+
+<div class="slide">
+<h2>목차</h2>
+<ul>
+<li>Wi‑Fi Sensing이란?</li>
+<li>물리학적 원리</li>
+<li>AI 분석 과정</li>
+<li>사회적 영향</li>
+<li>향후 전망</li>
+<li>느낀 점</li>
+</ul>
+</div>
+
+<div class="slide">
+<h2>Wi‑Fi Sensing이란?</h2>
+<div class="split">
+<div class="left">
+<div class="card">
+<p>일반 공유기의 Wi‑Fi 신호를 활용하여 벽 너머 사람의 위치와 움직임을 추적하는 기술</p>
+</div>
+<ul>
+<li>전자기파 사용</li>
+<li>벽을 통과한 신호 반사</li>
+<li>딥러닝 기반 분석</li>
+</ul>
+</div>
+<div class="right">
+<img src="1.png" alt="WiFi Sensing">
+</div>
+</div>
+</div>
+
+<div class="slide">
+<h2>물리학적 원리</h2>
+<div class="split">
+<div class="left">
+<div class="card">전자기파 : 2.4GHz 또는 5GHz Wi‑Fi 신호</div>
+<div class="card">반사 : 사람 몸에 부딪혀 다시 돌아오는 전파</div>
+<div class="card">위상·진폭 변화 : 움직임에 따라 신호 특성 변화</div>
+</div>
+<div class="right">
+<img src="2.jpg" alt="전자기파 반사">
+</div>
+</div>
+</div>
+
+<div class="slide">
+<h2>AI 분석 과정</h2>
+<div class="img-box">
+<img src="3.png" alt="AI Process">
+</div>
+</div>
+
+<div class="slide">
+<h2>사회적 영향</h2>
+<div class="split">
+<div class="left">
+<div class="card"><p>긍정적 영향 : 의료 모니터링, 재난 구조, 스마트홈</p></div>
+
+</div>
+<div class="right">
+<img src="4.png" alt="사회적 영향">
+</div>
+</div>
+</div>
+
+<div class="slide">
+<h2>사회적 영향</h2>
+<div class="split">
+<div class="left">
+
+<div class="card"><p>부정적 영향 : 개인정보 침해, 감시 악용 가능성</p></div>
+</div>
+<div class="right">
+<img src="5.png" alt="사회적 영향">
+</div>
+</div>
+</div>
+
+<div class="slide">
+<h2>향후 전망</h2>
+<div class="split">
+<div class="left">
+<ul>
+<li>다중 사용자 추적</li>
+<li>심박·호흡 비접촉 측정</li>
+<li>6G 통신 기술과 융합</li>
+<li>의료·재난 구조 활용 확대</li>
+<li>개인정보 보호 기술 연구</li>
+</ul>
+</div>
+<div class="right">
+</div>
+</div>
+</div>
+
+<div class="slide">
+<h2>느낀 점 및 결론</h2>
+<div class="card">
+<p>이번 탐구를 통해 평소 인터넷을 사용할 때만 접하던 Wi-Fi 신호가 단순한 통신 수단이 아니라 사람의 위치와 움직임까지 분석할 수 있는 첨단 기술의 기반이 된다는 점을 알게 되었다. 특히 물리학Ⅱ에서 배우는 전자기파의 반사, 투과, 흡수와 같은 
+    개념이 실제 최신 AI 기술과 연결된다는 사실이 매우 인상 깊었다. 또한 Wi-Fi Sensing 기술이 의료 모니터링, 재난 구조, 스마트홈 등 다양한 분야에서 사람들의 삶을 더욱 안전하고 편리하게 만들 수 있다는 점에서 큰 가능성을 느꼈다. 반면, 이러한 기술이 개인정보 침해나 감시 문제로 악용될 수 있다는 점도 알게 되었으며, 기술 발전과 함께 윤리적·사회적 문제를 해결하기 위한 노력 역시 중요하다고 생각하게 되었다. 이번 탐구를 통해 물리학이 단순한 이론이 아니라 미래 기술을 이해하고 발전시키는
+     데 필요한 중요한 학문이라는 것을 다시 한번 느낄 수 있었습니다</p>
+</div>
+<p style="margin-top:20px;">참고자료 : Carnegie Mellon University, IEEE 논문</p>
+</div>
+
+<div class="nav">
+<button onclick="move(-1)">← 이전</button>
+<span class="indicator" id="ind">1 / 8</span>
+<button onclick="move(1)">다음 →</button>
+</div>
+
+<script>
+const slides=document.querySelectorAll('.slide');
+let current=0;
+function show(n){
+ if(n<0||n>=slides.length)return;
+ slides[current].classList.remove('active');
+ current=n;
+ slides[current].classList.add('active');
+ document.getElementById('ind').textContent=(current+1)+' / '+slides.length;
+}
+function move(d){show(current+d);}
+document.addEventListener('keydown',e=>{
+ if(e.key==='ArrowRight')move(1);
+ if(e.key==='ArrowLeft')move(-1);
+});
+</script>
+</body>
+</html>
